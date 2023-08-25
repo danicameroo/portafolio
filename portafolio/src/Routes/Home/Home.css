@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap');
+
+.Home{
+    background: url('../../images/homeBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 600px;
+    width: 1200px;
+}
+.textHomeContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.titleOneHomeContainer{
+    color: white;
+    font-size: 96px;
+    margin-bottom: 0;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 100;
+    height: 90px;
+    letter-spacing: 5px;
+}
+.titleTwoHomeContainer{
+    color: white;
+    font-size: 96px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Noto Serif Display', serif;
+    height: 120px;
+    letter-spacing: 5px;
+}
+.textHome{
+    color: white;
+    margin-top: 0;
+    letter-spacing: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 15px;
+    font-family: 'Faustina', serif;
+}
+.buttonHomeContainer{
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    justify-content: space-between;
+    align-items: start;
+    margin-right: 60px;
+}
+.buttonHome{
+    background-color: rgba(31, 31, 31, 0.253);
+    transition: background-color 0.5s;
+    border: 1px solid white;
+    width: 170px;
+    height: 60px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Faustina', serif;
+    letter-spacing: 3px;
+    border-radius:20px;
+}
+.buttonHome:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

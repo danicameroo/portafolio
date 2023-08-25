@@ -1,0 +1,41 @@
+.positionNav{
+    position: fixed;
+    background-color: none;
+    width: 100%;
+    z-index: 9999;
+}
+.MenuNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: start;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+.categoriesNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkNav{
+    text-decoration: none;
+    color: black;
+}
+.listaNav{
+    color: hwb(0 75% 25%);
+    transition: color 0.5s;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'insaniburger';
+    transition: transform 0.3s ease;
+}
+.listaNav:hover{
+    color: white;
+    transform: scale(1.1);
+}
