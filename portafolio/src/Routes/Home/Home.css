@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,100;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap');
+@font-face {
+    font-family: 'Circular Spotify Tx T-Black';
+    src: url('../../font/CircularSpotifyTxT-Black.ttf');
+}
+@font-face {
+    font-family: 'Circular Spotify Tx T-Light';
+    src: url('../../font/CircularSpotifyTxT-Light.ttf');
+}
 
 .Home{
-    background: url('../../images/homeBG.png');
+    background: url('../../images/Background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,8 +20,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    height: 600px;
-    width: 1200px;
+    height: 500px;
+    width: 1300px;
 }
 .textHomeContainer{
     display: flex;
@@ -24,52 +29,153 @@
     text-align: start;
 }
 .titleOneHomeContainer{
-    color: white;
-    font-size: 96px;
+    color: rgb(241, 236, 236);
+    font-size: 70px;
     margin-bottom: 0;
-    font-family: 'Noto Serif Display', serif;
+    font-family: Circular Spotify Tx T-Light;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.404);
     font-weight: 100;
-    height: 90px;
-    letter-spacing: 5px;
+    height: 60px;
 }
 .titleTwoHomeContainer{
-    color: white;
+    color: rgb(241, 236, 236);
     font-size: 96px;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Noto Serif Display', serif;
-    height: 120px;
-    letter-spacing: 5px;
+    font-family: Circular Spotify Tx T-Black;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.404);
+    font-weight: 700;
+    height: 100px;
 }
 .textHome{
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 0;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     font-size: 30px;
-    font-weight: 100;
     margin-left: 15px;
-    font-family: 'Faustina', serif;
+    font-family: Circular Spotify Tx T-Light;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.589);
+    font-weight: 100;
 }
 .buttonHomeContainer{
     display: flex;
     flex-direction: row;
-    width: 380px;
+    width: 320px;
     justify-content: space-between;
     align-items: start;
-    margin-right: 60px;
+    margin-right: 65px;
 }
 .buttonHome{
-    background-color: rgba(31, 31, 31, 0.253);
+    background-color: rgba(255, 255, 255, 0.404);
     transition: background-color 0.5s;
-    border: 1px solid white;
-    width: 170px;
-    height: 60px;
-    font-size: 22px;
-    color: white;
-    font-family: 'Faustina', serif;
-    letter-spacing: 3px;
+    border: none;
+    width: 150px;
+    height: 55px;
+    font-size: 20px;
+    color: black;
+    font-family: Circular Spotify Tx T-Light;
+    font-weight: 200;
+    letter-spacing: 2px;
     border-radius:20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.37);
 }
 .buttonHome:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.137);
+}
+.iconosHome{
+    display: static;
+    bottom: 0;
+}
+
+@media (min-width: 300px) and (max-width:425px){
+    .Home{
+        background: url('../../images/Background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+    .homeContainer{
+        padding: 0 30px 100px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        height: 500px;
+        width: 300px;
+    }
+    .textHomeContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .titleOneHomeContainer{
+        color: rgb(241, 236, 236);
+        font-size: 45px;
+        margin-bottom: 0;
+        font-family: Circular Spotify Tx T-Light;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.404);
+        font-weight: 100;
+        height: 50px;
+    }
+    .titleTwoHomeContainer{
+        color: rgb(241, 236, 236);
+        font-size: 56px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Circular Spotify Tx T-Black;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.404);
+        font-weight: 700;
+        height: 60px;
+    }
+    .textHome{
+        color: rgb(255, 255, 255);
+        margin-top: 0;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-left: 8px;
+        font-family: Circular Spotify Tx T-Light;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.589);
+        font-weight: 100;
+    }
+    .buttonHomeContainer{
+        display: flex;
+        flex-direction: row;
+        width: 220px;
+        justify-content: space-between;
+        align-items: start;
+        margin-right: 20px;
+    }
+    .buttonHome{
+        background-color: rgba(255, 255, 255, 0.404);
+        transition: background-color 0.5s;
+        border: none;
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        color: black;
+        font-family: Circular Spotify Tx T-Light;
+        font-weight: 200;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.37);
+    }
+    .buttonHome:hover{
+        background-color: rgba(0, 0, 0, 0.603);
+        color: white;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.137);
+    }
+    .iconosHome{
+        display: static;
+        bottom: 0;
+    }
 }

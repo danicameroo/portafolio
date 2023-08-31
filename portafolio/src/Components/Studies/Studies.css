@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Circular Spotify Tx T-Black';
+    src: url('../../font/CircularSpotifyTxT-Black.ttf');
+}
+@font-face {
+    font-family: 'Circular Spotify Tx T-Light';
+    src: url('../../font/CircularSpotifyTxT-Light.ttf');
+}
+
+.Studies{
+    padding-top: 5px;
+}
+.containerBigTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    animation: gradient-fade-title 2s forwards;
+}
+@keyframes gradient-fade-title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    .titleBigStudies{
+    font-size: 34px;
+    font-family: Circular Spotify Tx T-Black;
+    color: rgb(241, 236, 236);
+    width: 200px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.StudiesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+}
+.StudiesTitle{
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    font-weight: 100;
+    font-family: Circular Spotify Tx T-Light;
+    color: rgb(241, 236, 236);
+}
+.StudiesSubtitle{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 7px;
+    font-weight: 100;
+    font-family: Circular Spotify Tx T-Light;
+    color: rgb(241, 236, 236);
+}
+.imgSkill{
+    width: 310px;
+    height: 180px;
+    box-shadow: 6px 6px 6px 3px rgba(2, 2, 2, 0.568);
+    transition: transform 0.3s ease;
+}
+.imgSkill:hover {
+    transform: scale(1.2); /* Ajusta el factor de escala según tus necesidades */
+    box-shadow: none;
+}
+.iconSkills{
+    width: 50px;
+    height: 50px;
+}
+
+.image-transition {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    margin-top: 15px;
+  }
+  
+  .image-transition:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, white, white);
+    opacity: 0;
+    animation: gradient-fade-in 1s forwards;
+  }
+  
+  @keyframes gradient-fade-in {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+
+  .image-transitionTwo {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    margin-top: 15px;
+  }
+  
+  .image-transitionTwo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to left, white, white);
+    opacity: 0;
+    animation: gradient-fade-inTwo 1s forwards;
+  }
+  @keyframes gradient-fade-inTwo {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 300px) and (max-width:425px){
+    .Studies{
+      padding-top: 60px;
+  }
+  .containerBigTitle{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      text-align: center;
+      height: 50px;
+      opacity: 0;
+      animation: none;
+}
+
+.containerBigTitle.active {
+  animation: gradient-fade-title 1s ease-in-out forwards !important;
+}
+
+@keyframes gradient-fade-title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+      .titleBigStudies{
+      font-size: 24px;
+      font-family: Circular Spotify Tx T-Black;
+      color: rgb(241, 236, 236);
+      width: 150px;
+      margin: 0;
+      padding-bottom: 5px;
+  }
+  .StudiesContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 1100px;
+      width: 100%;
+      padding-bottom: 40px;
+  }
+  .StudiesTitle{
+      font-size: 24px;
+      text-align: center;
+      margin: 0;
+      font-weight: 100;
+      font-family: Circular Spotify Tx T-Light;
+      color: rgb(241, 236, 236);
+  }
+  .StudiesSubtitle{
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+      padding-bottom: 7px;
+      font-weight: 100;
+      font-family: Circular Spotify Tx T-Light;
+      color: rgb(241, 236, 236);
+  }
+  .imgSkillContainer{
+    display: flex;
+    margin: auto;
+  }
+  .imgSkill{
+      width: 290px;
+      height: 160px;
+      box-shadow: 6px 6px 6px 3px rgba(2, 2, 2, 0.568);
+      transition: transform 0.3s ease;
+      margin: auto;
+  }
+  .imgSkill:hover {
+      transform: scale(1.2); /* Ajusta el factor de escala según tus necesidades */
+      box-shadow: none;
+  }
+  .iconSkills{
+      width: 50px;
+      height: 50px;
+  }
+  
+  .image-transition {
+      position: relative;
+      width: 70px;
+      height: 100%;
+      margin-top: 15px;
+    }
+    
+    .image-transition:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 3px;
+      background: linear-gradient(to right, white, white);
+      opacity: 0;
+      animation: none;
+    }
+
+    .containerBigTitle.active .image-transition:before {
+      animation: gradient-fade-in 1s forwards !important;
+    }
+    
+    @keyframes gradient-fade-in {
+      0% {
+        opacity: 0;
+        width: 0;
+      }
+      100% {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  
+    .image-transitionTwo {
+      position: relative;
+      width: 70px;
+      height: 100%;
+      margin-top: 15px;
+    }
+    
+    .image-transitionTwo:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 35px;
+      height: 3px;
+      background: linear-gradient(to left, white, white);
+      opacity: 0;
+      animation: none;
+    }
+
+    .containerBigTitle.active .image-transitionTwo:before {
+      animation: gradient-fade-inTwo 1s forwards !important;
+    }
+    @keyframes gradient-fade-inTwo {
+      0% {
+        opacity: 0;
+        width: 0;
+      }
+      100% {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  }

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Circular Spotify Tx T-Black';
+    src: url('../../font/CircularSpotifyTxT-Black.ttf');
+}
+@font-face {
+    font-family: 'Circular Spotify Tx T-Light';
+    src: url('../../font/CircularSpotifyTxT-Light.ttf');
+}
+
+.Skill{
+    padding-top: 80px;
+}
+.titleBigSkills{
+    font-size: 34px;
+    font-family: Circular Spotify Tx T-Black;
+    color: rgb(241, 236, 236);
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.SkillContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+}
+.SkillTitle{
+    font-size: 24px;
+    width: 140px;
+    margin: 0;
+    padding-left: 15px;
+    font-weight: 100;
+    font-family: Circular Spotify Tx T-Light;
+    color: rgb(241, 236, 236);;
+}
+.barraContainer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 180px;
+}
+.barraSkill{
+    width: 160px;
+    height: 50px;
+}
+.iconSkills{
+    width: 30px !important;
+    height: 30px !important;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+.image-overlay p {
+    color: white;
+    font-size: 12px;
+    text-align: end;
+    margin-top: -25px; 
+    font-family: Circular Spotify Tx T-Light;
+}
+  
+@media (min-width: 300px) and (max-width:425px){
+    .Skill{
+        padding-top: 80px;
+    }
+    .titleBigSkills{
+        font-size: 24px;
+        font-family: Circular Spotify Tx T-Black;
+        color: rgb(241, 236, 236);
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .SkillContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+    }
+    .SkillTitle{
+        font-size: 16px;
+        width: 100px;
+        margin: 0;
+        padding-left: 15px;
+        font-weight: 100;
+        font-family: Circular Spotify Tx T-Light;
+        color: rgb(241, 236, 236);;
+    }
+    .barraContainer{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 110px;
+    }
+    .barraSkill{
+        width: 120px;
+        height: 30px;
+    }
+    .iconSkills{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    .image-container:hover .image-overlay {
+        opacity: 1;
+    }
+    .image-overlay p {
+        color: white;
+        font-size: 10px;
+        text-align: end;
+        margin-top: -20px; 
+        font-family: Circular Spotify Tx T-Light;
+    }
+}

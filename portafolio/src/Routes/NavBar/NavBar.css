@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Circular Spotify Tx T-Black';
+    src: url('../../font/CircularSpotifyTxT-Black.ttf');
+}
+
 .positionNav{
     position: fixed;
     background-color: none;
@@ -28,14 +33,48 @@
     color: black;
 }
 .listaNav{
-    color: hwb(0 75% 25%);
-    transition: color 0.5s;
-    font-size: 16px;
+    color: rgb(230, 221, 221);
+    font-size: 18px;
     font-weight: 400;
-    font-family: 'insaniburger';
-    transition: transform 0.3s ease;
+    font-family: Circular Spotify Tx T-Black;
+    transition: transform 0.5s ease;
 }
 .listaNav:hover{
-    color: white;
     transform: scale(1.1);
+}
+
+@media (min-width: 300px) and (max-width:425px){
+    .positionNav{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.103);
+        height: 65px;
+        width: 100%;
+        z-index: 9999;
+    }
+    .listaNav{
+        color: rgb(230, 221, 221);
+        font-size: 10px;
+        font-weight: 400;
+        font-family: Circular Spotify Tx T-Black;
+        transition: transform 0.5s ease;
+    }
+    .MenuNav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .categoriesNav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
